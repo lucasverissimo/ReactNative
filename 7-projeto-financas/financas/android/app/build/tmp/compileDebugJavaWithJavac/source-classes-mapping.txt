@@ -1,0 +1,14 @@
+com/financas/MainApplication.java
+ com.financas.MainApplication
+ com.financas.MainApplication$1
+com/financas/MainActivity.java
+ com.financas.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/financas/ReactNativeFlipper.java
+ com.financas.ReactNativeFlipper
+ com.financas.ReactNativeFlipper$1
+ com.financas.ReactNativeFlipper$2
+ com.financas.ReactNativeFlipper$2$1
+com/financas/BuildConfig.java
+ com.financas.BuildConfig

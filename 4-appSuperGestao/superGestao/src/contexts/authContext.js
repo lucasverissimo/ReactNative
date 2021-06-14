@@ -20,7 +20,7 @@ export default function AuthProvider({ children }){
                 setUser(usuario);
                 setSigned(true);
                 setLoadingScreen(true);
-                // signIn(usuario.email, usuario.senha);
+                signIn(usuario.email, usuario.senha);
             }else{
                console.log("Nao Existe usuario");
                setSigned(false);
@@ -100,6 +100,7 @@ export default function AuthProvider({ children }){
     }
 
     async function setStorageData(name, data){
+        console.log("Mudou o async");
         await AsyncStorage.setItem(name, JSON.stringify(data));
     }
 
@@ -125,7 +126,7 @@ export default function AuthProvider({ children }){
     }
 
     return(
-        <AuthContext.Provider value={{ signed, signIn, user, loadingBtnLogin, loadingScreen, logout }}>
+        <AuthContext.Provider value={{ signed, signIn, user, loadingBtnLogin, loadingScreen, logout, setStorageData, setUser }}>
             {children}
         </AuthContext.Provider>
     );

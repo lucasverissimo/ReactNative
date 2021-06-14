@@ -14,13 +14,12 @@ export const HeaderTitle = styled.View`
     flex-direction: row;
 `;
 
-export const ButtonHeaderTitle = styled.TouchableOpacity`
-    border-radius: 4px;
-    padding: 10px 15px;
+export const ButtonsHeader = styled.View`
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    background-color: #02a343;
 `;
 
-export const TextButtonHT = styled.Text``;
+
 

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { HeaderDrawer, LogoDrawer, MessageDrawer, NameDrawer } from './drawerStyle';
 import { DrawerContentScrollView, DrawerItemList, DrawerItem } from '@react-navigation/drawer';
 
@@ -6,7 +6,15 @@ import { AuthContext } from '../../contexts/authContext';
 
 export default function CustomDrawer(props) {
 
+    const [ nomeUsuarioLogado, setNomeUsuarioLogado ] = useState('');
+
     const { user, logout } = useContext(AuthContext);
+    
+    useEffect(()=>{
+        setNomeUsuarioLogado(user.nome.toString());
+    }, [user])
+
+    
 
  return (
    <DrawerContentScrollView {...props}>
@@ -17,7 +25,7 @@ export default function CustomDrawer(props) {
                 Seja bem-vindo!
             </MessageDrawer>
             <NameDrawer>
-                {user.nome.toString()}
+                {nomeUsuarioLogado}
             </NameDrawer>
         </HeaderDrawer>
 

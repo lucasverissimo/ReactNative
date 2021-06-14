@@ -40,3 +40,14 @@ export const BtnExcluirUsuario = styled.TouchableOpacity`
     padding: 8px;
     border-radius: 4px;
 `;
+
+export const ButtonHeaderTitle = styled.TouchableOpacity`
+    border-radius: 4px;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #02a343;
+    margin: 0 5px;
+`;
+
+export const TextButtonHT = styled.Text``;

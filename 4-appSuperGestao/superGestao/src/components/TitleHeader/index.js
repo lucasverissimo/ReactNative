@@ -1,17 +1,15 @@
 import React from 'react';
-import { HeaderTitle, ButtonHeaderTitle, TextButtonHT, TitlePage } from './titleHeaderStyle';
+import { HeaderTitle, ButtonsHeader, TitlePage } from './titleHeaderStyle';
 
-export default function TitleHeader({children, name, pressButtonFunc}) {
+export default function TitleHeader({children, name}) {
 
     // 
  return (
     <HeaderTitle>
         <TitlePage>{name}</TitlePage>
-        <ButtonHeaderTitle onPress={()=>pressButtonFunc()}>
-            <TextButtonHT>
-                {children}
-            </TextButtonHT>
-        </ButtonHeaderTitle>
+        <ButtonsHeader>
+            {children}
+        </ButtonsHeader>
     </HeaderTitle>
   );
 }

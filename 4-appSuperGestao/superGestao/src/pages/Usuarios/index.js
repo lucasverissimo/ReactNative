@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { Background, Container } from '../styles/homeStyle';
-import { AreaListaUsuarios, HeaderAreaListaUsuarios, NomeUsuario, BtnAcoes, BtnEditarUsuario, BtnExcluirUsuario, ButtonHeaderTitle, TextButtonHT } from '../styles/usuariosStyle';
+import { Background, Container, ButtonHeaderTitle, TextButtonHT } from '../styles/homeStyle';
+import { 
+    AreaListaUsuarios, HeaderAreaListaUsuarios, NomeUsuario, BtnAcoes, BtnEditarUsuario, 
+    BtnExcluirUsuario } from '../styles/usuariosStyle';
 import TitleHeader from '../../components/TitleHeader';
 
 import api from '../../services/api';

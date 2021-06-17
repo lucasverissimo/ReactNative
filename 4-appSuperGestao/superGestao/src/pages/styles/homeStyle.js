@@ -39,3 +39,23 @@ export const SubTitlePage = styled.Text`
     margin-top:5px;
 `;
 
+
+
+export const ButtonHeaderTitle = styled.TouchableOpacity`
+    border-radius: 4px;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #02a343;
+    margin: 0 5px;
+`;
+
+export const TextButtonHT = styled.Text``;
+
+export const ContainerLista = styled.View`
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+`;
+

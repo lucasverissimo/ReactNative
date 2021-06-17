@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Background, Container, TitlePage, List } from '../../styles/homeStyle';
-import { SafeAreaView } from 'react-native';
 
 import Header from '../../../components/Header';
 import CustomChart from '../../../components/CustomChart';
-import MaisVendidosList from '../../../components/MaisVendidosList';
+import Produto from '../../../components/Produto';
 
 export default function TabVendas() {
 
@@ -44,7 +43,7 @@ export default function TabVendas() {
           </TitlePage>
             {listaMaisVendidos.map((value)=>{
                return(
-                  <MaisVendidosList 
+                  <Produto 
                      key={value.key}
                      data={value}
                   />

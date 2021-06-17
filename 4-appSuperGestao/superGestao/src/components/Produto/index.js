@@ -1,7 +1,7 @@
 import React from 'react';
-import { AreaItem, ImageProd, AreaInfoProd, NomeProd, LegendaProd, VendasProd, SituacaoProd } from './maisVendidosStyle';
+import { AreaItem, ImageProd, AreaInfoProd, NomeProd, LegendaProd, VendasProd, SituacaoProd } from './produtoStyle';
 
-export default function MaisVendidosList(props) {
+export default function Produto(props) {
     const data = props.data;
     return (
         <AreaItem>

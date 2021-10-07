@@ -28,8 +28,8 @@ export default function HomeScreen() {
                     textInput: {
                         fontSize: 18,
                         borderWidth: 1,
-                        borderColor: '#ddd',
-                        backgroundColor: '#f0f0f0',
+                        borderColor: '#eee',
+                        backgroundColor: '#fff',
                     }
                 }}
                 returnKeyType={"search"}

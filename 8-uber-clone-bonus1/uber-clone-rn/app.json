@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "uber-clone-rn",
+    "slug": "uber-clone-rn",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "uber-clone-rn"
+}

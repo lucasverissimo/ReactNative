@@ -1,0 +1,98 @@
+zsete paris.
+Consumer key: ck_0b71e33dd5b72672b0782cef6032bf098c90ab74
+Consumer secret: cs_a0bcd6c4d421820b452c69e123fe046911b9dd39,
+
+CADASTRAR (POST):
+URL: https://zseteparis.com.br/wp-json/wc/v3/customers?consumer_key=ck_0b71e33dd5b72672b0782cef6032bf098c90ab74&consumer_secret=cs_a0bcd6c4d421820b452c69e123fe046911b9dd39
+
+{
+  "email": "lucas@lucasverissimo.com.br",
+  "password":"lucas123",
+  "first_name": "lucas",
+  "last_name": "verissimo",
+  "username": "lvgarcezjorge",
+  "billing": {
+    "first_name": "Lucas",
+    "last_name": "Verissimo",
+    "company": "",
+    "address_1": "969 Market",
+    "address_2": "",
+    "city": "San Francisco",
+    "state": "CA",
+    "postcode": "94103",
+    "country": "US",
+    "email": "lucas@lucasverissimo.com.br",
+    "phone": "(555) 555-5555"
+  },
+  "shipping": {
+    "first_name": "Lucas",
+    "last_name": "Verissimo",
+    "company": "",
+    "address_1": "969 Market",
+    "address_2": "",
+    "city": "San Francisco",
+    "state": "CA",
+    "postcode": "94103",
+    "country": "US"
+  },
+  "meta_data": [ 
+    {"key": "billing_cpf", "value": "197.679.440-44" },
+    {"key": "billing_cnpj", "value": "99.551.666/0001-03" },
+    {"key": "billing_number", "value": "45" },
+    {"key": "billing_neighborhood", "value": "Bairro XYZ" }
+  ]
+}
+
+
+
+ATUALIZAR (PUT):
+https://zseteparis.com.br/wp-json/wc/v3/customers/30?consumer_key=ck_0b71e33dd5b72672b0782cef6032bf098c90ab74&consumer_secret=cs_a0bcd6c4d421820b452c69e123fe046911b9dd39
+
+{
+  "first_name": "lucas",
+  "last_name": "Garcez",
+  "billing": {
+    "address_1": "Rua castroville",
+    "address_2": "115",
+    "city": "Itaquaquecetuba",
+    "state": "SP",
+    "postcode": "08584-260",
+    "country": "BR",
+    "email": "lucas@lucasverissimo.com.br",
+    "phone": "(11) 94648-00000"
+  },
+  "shipping": {
+   "address_1": "Rua castroville",
+    "address_2": "115",
+    "city": "Itaquaquecetuba",
+    "state": "SP",
+    "postcode": "08584-260",
+    "country": "BR",
+    "email": "lucas@lucasverissimo.com.br",
+    "phone": "(11) 94648-00000"
+  },
+  "meta_data": [ 
+    {"key": "billing_number", "value": "115" },
+    {"key": "billing_neighborhood", "value": "Jardim California" }
+  ]
+}
+
+PEGAR DADOS (POR ID) (GET):
+https://zseteparis.com.br/wp-json/wc/v3/customers/30?consumer_key=ck_0b71e33dd5b72672b0782cef6032bf098c90ab74&consumer_secret=cs_a0bcd6c4d421820b452c69e123fe046911b9dd39
+
+DELETAR (DELETE)
+https://zseteparis.com.br/wp-json/wc/v3/customers/30?force=true&consumer_key=ck_0b71e33dd5b72672b0782cef6032bf098c90ab74&consumer_secret=cs_a0bcd6c4d421820b452c69e123fe046911b9dd39
+{"force":"true"}
+
+
+LOGIN (TIPO POST - PRECISA DO PLUGIN Mini Orange)
+https://plugins.miniorange.com/wordpress-rest-api-basic-authentication-method
+Ai passa o seguinte Header: Authorization : Basic eGw2UllOdFN6WmxKOlNMRWcwS1ZYdFVrbm5XbVV2cG9RVFNLZw==
+Tem que estar baseado em username:password (mas em base64)
+
+Aqui tem de autenticar: https://zseteparis.com.br/wp-json/wp/v2/posts
+E então ira retornar o post, ou ira retornar um json com error.
+
+Apos verificar se retornou ok, pegar o id do usuário na URL abaixo (usando o e-mail para buscar):
+URL para buscar os dados do usuário:
+https://zseteparis.com.br/wp-json/wc/v3/customers?email=lucas@lucasverissimo.com.br&consumer_key=ck_0b71e33dd5b72672b0782cef6032bf098c90ab74&consumer_secret=cs_a0bcd6c4d421820b452c69e123fe046911b9dd39

@@ -1,7 +1,7 @@
 import React from "react";
 import { Div, P } from "../../style/globalStyle";
 
-export default function NewCustomer(){
+export default function Profile(){
     return(
         <Div>
             <P>New Customer</P>
